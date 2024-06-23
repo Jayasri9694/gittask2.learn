@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>task</title>
+    </head> 
+    <body>
+        <script>     
+        //Return all the palindromes in an array
+
+const string = ["amma", "hello", "radar"];
+
+const isPalindrome = (str) => {
+  const reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
+};
+
+const getPalindromes = (arr) => {
+  return arr.filter((str) => isPalindrome(str));
+};
+
+console.log("Palindromes in given array is : "+ getPalindromes(string));
+         </script>
+    </body>
+</html>
